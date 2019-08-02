@@ -2,7 +2,7 @@
 # tasks file for vhostdeploy
 - name: Get the vhost_deploy script for Single Node
   template:
-    src: vhost_deploy.sh
+    src: files/vhost_deploy.sh
     dest: /usr/src/vhost_deploy_apache/vhost_deploy.sh
 
 - name: Set the X right to vhost_deploy.sh script
