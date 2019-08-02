@@ -1,7 +1,7 @@
 ---
 # tasks file for vhostdeploy
 - name: Get the vhost_deploy script for Single Node
-  template:
+  copy:
     src: files/vhost_deploy.sh
     dest: /usr/src/vhost_deploy_apache/vhost_deploy.sh
 
