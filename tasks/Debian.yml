@@ -1,5 +1,10 @@
 ---
 # tasks file for vhostdeploy
+- name: Ensure the vhost_deploy directory is present
+  file:
+    path: /usr/src/vhost_deploy_apache
+    state: directory
+
 - name: Get the vhost_deploy script for Single Node
   copy:
     src: files/vhost_deploy.sh
