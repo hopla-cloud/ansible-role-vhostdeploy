@@ -1,5 +1,5 @@
 ---
-# tasks file for vhostdeploy
+# tasks file for hoplacloud.vhostdeploy-apache
 - name: Ensure the vhost_deploy directory is present
   file:
     path: /usr/src/vhost_deploy_apache
