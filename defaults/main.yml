@@ -1,5 +1,5 @@
 ---
-# defaults file for hoplacloud.vhostdeploy-apache
+# defaults file for hoplacloud.vhostdeploy_apache
 
 customerid: "user"
 customeradmin: "admin@example.com"
