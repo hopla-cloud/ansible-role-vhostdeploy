@@ -1,5 +1,7 @@
 ---
 - hosts: localhost
+  vars:
+    customerid: "user"
   remote_user: root
   roles:
     - hoplacloud.vhostdeploy_apache
