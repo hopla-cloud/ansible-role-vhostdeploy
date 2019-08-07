@@ -25,13 +25,12 @@ ansible-galaxy install hoplacloud.vhostdeploy_apache
 ansible-galaxy install geerlingguy.mysql
 
 # Write roles
-echo "Installed on :" >> /etc/hopla.cloud-roles
+echo "- hoplacloud.apache_php" >> /etc/hopla.cloud-roles
+echo "- hoplacloud.vhostdeploy_apache" >> /etc/hopla.cloud-roles
+echo "- geerlingguy.mysql" >> /etc/hopla.cloud-roles
+echo " " >> /etc/hopla.cloud-roles
+echo "Deployment date (YYYY-MM-DD):" >> /etc/hopla.cloud-roles
 date +%F >> /etc/hopla.cloud-roles
-echo "Roles :" >> /etc/hopla.cloud-roles
-echo "hoplacloud.apache_php" >> /etc/hopla.cloud-roles
-echo "hoplacloud.vhostdeploy_apache" >> /etc/hopla.cloud-roles
-echo "geerlingguy.mysql" >> /etc/hopla.cloud-roles
-
 
 # Install oneclick app
 ansible-playbook /root/.ansible/roles/hoplacloud.vhostdeploy_apache/playbooks/vhostdeploy_apache_php_mariadb.yml
