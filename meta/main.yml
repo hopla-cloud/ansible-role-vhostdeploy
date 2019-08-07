@@ -19,6 +19,6 @@ galaxy_info:
     - fpm
 
 dependencies:
+    - hoplacloud.linux_update
     - hoplacloud.apache_php
     - hoplacloud.proftpd
-    - hoplacloud.linux_update
