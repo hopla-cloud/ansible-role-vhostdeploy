@@ -24,12 +24,14 @@ DEBIAN_FRONTEND=noninteractive apt install ansible -y --allow-yes true
 ansible-galaxy install hoplacloud.vhostdeploy_apache
 ansible-galaxy install geerlingguy.mysql
 
-# Install oneclick app
-ansible-playbook /root/.ansible/roles/hoplacloud.vhostdeploy_apache/playbooks/vhostdeploy_apache_php_mariadb.yml
-
+# Write roles
 echo "Installed on :" >> /etc/hopla.cloud-roles
 date +%F >> /etc/hopla.cloud-roles
 echo "Roles :" >> /etc/hopla.cloud-roles
 echo "hoplacloud.apache_php" >> /etc/hopla.cloud-roles
 echo "hoplacloud.vhostdeploy_apache" >> /etc/hopla.cloud-roles
 echo "geerlingguy.mysql" >> /etc/hopla.cloud-roles
+
+
+# Install oneclick app
+ansible-playbook /root/.ansible/roles/hoplacloud.vhostdeploy_apache/playbooks/vhostdeploy_apache_php_mariadb.yml
