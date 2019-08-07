@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  vars:
+    customerid: ubuntu
+    mysql_packages:
+      - mariadb-client
+      - mariadb-server
+      - python-mysqldb
+  remote_user: root
+  roles:
+    - hoplacloud.vhostdeploy_apache
+    - geerlingguy.mysql
