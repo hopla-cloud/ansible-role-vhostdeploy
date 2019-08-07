@@ -21,3 +21,4 @@ galaxy_info:
 dependencies:
     - hoplacloud.apache_php
     - hoplacloud.proftpd
+    - hoplacloud.linux_update
