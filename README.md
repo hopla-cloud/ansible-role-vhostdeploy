@@ -13,7 +13,8 @@ Role Variables
 --------------
 
 Php variables
-- php_version: "7.3" (Possible : 5.6 7.0 7.1 7.2 7.3)
+- php_version: "7.3"
+(Possible : 5.6 7.0 7.1 7.2 7.3)
 - post_max_size: "64M"
 - upload_max_filesize: "64M"
 - short_open_tag: "On"
