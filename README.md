@@ -2,7 +2,6 @@ Role Name
 =========
 
 Hopla.cloud role for ansible to deploy the vhostdeploy script.
-This role install apache2, php-fpm, Memcached, proftpd.
 
 Requirements
 ------------
@@ -11,6 +10,10 @@ None.
 
 Role Variables
 --------------
+
+System variables
+user_name: "user"
+user_email: "user@example.com"
 
 Php variables
 - php_version: "7.3"
