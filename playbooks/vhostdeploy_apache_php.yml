@@ -1,7 +1,0 @@
----
-- hosts: localhost
-  vars:
-    user_name: ubuntu
-  remote_user: root
-  roles:
-    - hoplacloud.vhostdeploy_apache

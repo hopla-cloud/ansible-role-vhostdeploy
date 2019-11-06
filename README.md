@@ -29,11 +29,6 @@ Memcached variables
 Dependencies
 ------------
 
-- hoplacloud.linux_update
-- hoplacloud.linux_motd
-- hoplacloud.apache_php
-- hoplacloud.proftpd
-
 Example Playbook
 ----------------
 
