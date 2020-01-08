@@ -21,7 +21,7 @@ adminEmail="admin@customer.com"
 # Apache Configuration
 apacheGroup="www-data"
 apacheConfPrefix="/etc/apache2"
-sitesPathPrefix="/var/www/custs"
+sitesPathPrefix="/var/www/sites"
 
 # PHP-FPM Configuration (5.6, 7.0, 7.1, 7.2, 7.3)
 phpfpmDaemonName="php7.3-fpm"
@@ -72,7 +72,7 @@ function addSysUser {
   passChar8=$(echo ${ranlist4:$(($RANDOM%${#ranlist4})):1})
   newpass=$passChar1$passChar2$passChar3$passChar4!$passChar5$passChar6$passChar7$passChar8
   user=$2$(echo $1 | tr -d '-' | tr -d '.' | cut -c -13)
-	
+
   useradd -M --home-dir ${sitesPathPrefix}/$1/$2 -s ${ftpShellPath} $user
   echo $user:$newpass | chpasswd
   echo "+-----------------------------------+"
